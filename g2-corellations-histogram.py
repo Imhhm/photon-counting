@@ -319,6 +319,8 @@ class MainFrame(wx.Frame):
         dlg.Destroy()
     
     def CrossCorrelation(self):
+        '''function which turns 'timetags', a 2D array of times of photon clicks and corresponding detector channel that the click was 
+        registered on, into a histogram of timegaps between clicks on particular channels. 'timetags' is collected from the detector in CalcCorrelationContinuous'''
         # Set times used for coincidence window (in pico seconds)
         #coincidence_start = 6.4e3; coincidence_end = 7.5e3
         
